@@ -17,21 +17,21 @@ body{
 }
 
 header{
-    height: 120px;
+    height: 100px;
     background-color: #1c1e31
 }
 
 header nav{
     display: flex;
     justify-content: center;
-    height: 120px;
+    height: 100px;
 }
 
 header nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120px;
+    height: 100px;
 }
 
 header nav ul li{
