@@ -18,7 +18,7 @@ body{
 
 header{
     height: 100px;
-    background-color: #1c1e31
+    background-color: #1c1e31;
 }
 
 header nav{
@@ -62,3 +62,70 @@ header nav ul li a:hover{
 .active{
     background-color: #92d050;
 }
+
+
+
+     /* Footer */
+
+     #footer{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #1c1e31;
+      }
+  
+      .footer-links{
+        flex: 2;
+        color: white;
+      }
+
+      .footer-links p{
+        margin-right: 12vw;
+      }
+
+      .item-icons{
+          margin-left: 8vw;
+      }
+
+      .fab{
+        font-size: 25px;
+        padding: 10px;
+        margin: 2px 8px;
+        border-radius: 50%;
+        text-align: center;
+        transition: all 250ms;
+      }
+      
+      .fab:hover{
+        background-color: #79c142;
+      }
+  
+      .footer-center{
+        text-align: center;
+        flex: 2;
+        color: white;
+      }
+
+      .footer-center nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .footer-center nav ul{
+        text-align: left;
+        margin-right: 1vw;
+      }
+  
+      .footer-center h1{
+        font-size: 23px;
+        margin-bottom: 10px;
+      }
+  
+      .footer-center li a{
+        color: #ffffff;
+      }
+      
