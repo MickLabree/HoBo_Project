@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	background-size: cover;
+}
+
+.nav{
+    width: 100%;
+    background-color: #34495e;
+    display: flex;
+    flex-direction: row;
+}
+
+header{
+    height: 100vh;
+    width: 20vw;
+    background-color: #34495e;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header ul li {
+    padding: 10px;
+}
+
+header ul li a{
+    color: white;
+    /* margin: 10px; */
+    padding: 10px;
+}
+
+header ul li a:hover{
+    color: red;
+}
