@@ -64,6 +64,118 @@ header nav ul li a:hover{
 }
 
 
+        /* Slideshow container */
+        .slideshow-container {
+          position: relative;
+          margin: auto;
+        }
+
+        .slide-image1{
+          width: 100%;
+          height: 100vh;
+          background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/spiderman.jpg) ;
+        }
+        .slide-image2{
+          width: 100%;
+          height: 100vh;
+          background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/strangerthings.png) ;
+        }
+        .slide-image3{
+          width: 100%;
+          height: 100vh;
+          background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/thecrown.jpg) ;
+        }
+        .slide-image4{
+          width: 100%;
+          height: 100vh;
+          background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/marcos-mexico.jpg) ;
+        }
+        
+
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 250ms ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+
+        .text {
+          color: white;
+          font-size: 18px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 60%;
+        }
+
+        .text h1{
+          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+        .text h1, p{
+          margin-bottom: 2vh;
+          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+        .slideshow-button{
+          color: #79c142;
+          border-color: #79c142;
+          font-size: 16px;
+          line-height: 32px;
+          height: 34px;
+          padding: 6px 27.2px;
+          border: 1px solid #79c142;
+          border-radius: 30px;
+          margin-right: 15px;
+        }
+
+        .slideshow-button:hover{
+          color: white;
+          background-color: #79c142;
+        }
+        
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+
+
 
      /* Footer */
 
