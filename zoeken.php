@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>HoBo | Zoeken</title>
-    <link rel="stylesheet" href="css/login-register.css">
+    <link rel="stylesheet" href="css/zoeken.css">
     <link rel="icon" type="image/x-icon" href="img/logo1.png" width="100%">
   </head>
 <body>
@@ -11,15 +11,12 @@
 
 
   <!-- main -->
-  <main>
-    <section class="search">
-      <form method="post">
-        <label>search</label>
-        <input type="text" name="search">
-        <input type="submit" name="submit">
-      </form>
-    </section>
-  </main>
+  <form method="POST">
+    <input type="text" name="search" placeholder="Search">
+    <button type="submit" name="submit-search">Search</button>
+  </form>
+
+
 
 
   <!-- footer -->
@@ -27,6 +24,14 @@
 </html>
 
 <?php
+require_once 'class/Zoeken.php';
+$zoek = new Zoeken();
+
+if(isset($_POST["submit-search"])) {
+  foreach($zoek->zoeken($_POST['search']) as $serie){
+    echo $serie->SerieTitel . "<br>";
+  }
+}
 
 
 
