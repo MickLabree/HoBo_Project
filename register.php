@@ -1,7 +1,7 @@
 <?php
 require_once 'class/User.php';
 
-$user = new USer();
+$user = new User();
 
 
 if(isset($_POST['register'])){
