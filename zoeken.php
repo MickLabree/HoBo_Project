@@ -11,7 +11,7 @@
 
 
   <!-- main -->
-  <form method="POST">
+  <form method="POST" action="zoekResultaat.php">
     <input type="text" name="search" placeholder="Search">
     <button type="submit" name="submit-search">Search</button>
   </form>
@@ -27,12 +27,15 @@
 require_once 'class/Zoeken.php';
 $zoek = new Zoeken();
 
+foreach($zoek->getSeries() as $serie){
+  echo $serie->SerieTitel . "<br>";
+}
+
+$zoek = new Zoeken();
 if(isset($_POST["submit-search"])) {
   foreach($zoek->zoeken($_POST['search']) as $serie){
     echo $serie->SerieTitel . "<br>";
   }
 }
-
-
 
 ?>
