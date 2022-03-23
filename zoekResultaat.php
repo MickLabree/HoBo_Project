@@ -20,5 +20,4 @@ if(isset($_POST["submit-search"])) {
     echo $serie->SerieTitel . "<br>";
   }
 }
-
 ?>
