@@ -27,8 +27,12 @@
 require_once 'class/Zoeken.php';
 $zoek = new Zoeken();
 
-foreach($zoek->getSeries() as $serie){
-  echo $serie->SerieTitel . "<br>";
+for($i = 0; $i < count($zoek->getSeries()); $i++){
+  $text = $zoek->getSeries()[$i]->SerieTitel . " ";
+  if($i % 5 == 0 && $i > 0){
+    $text .= "<br>";
+  }
+  echo $text;
 }
 
 $zoek = new Zoeken();
