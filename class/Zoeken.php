@@ -12,6 +12,13 @@
       return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
+    public function getSeries() {
+      $sql = "SELECT SerieTitel FROM serie LIMIT 100";
+      $stmt = $this->connect()->prepare($sql);
+      $stmt->execute();
+      return $stmt->fetchAll(PDO::FETCH_OBJ);
+    }
+
   }
 
 ?>
