@@ -12,7 +12,7 @@ body{
   background: #161620;
 }
 .box{
-  width: 300px;
+  width: 400px;
   padding: 40px;
   border-radius: 50px;
   position: absolute;
@@ -40,10 +40,30 @@ body{
   border-radius: 24px;
   transition: 0.25s;
 }
-.box input[type = "email"]:focus, .box input[type = "text"]:focus,.box input[type = "password"]:focus{
+.box input[type = "email"]:focus, .box input[type = "text"]:focus,.box input[type = "password"]:focus, .pakket:focus{
   width: 280px;
   border-color: green;
 }
+
+.pakket{
+  border:0;
+  background: black;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 225px;
+  outline: none;
+  color: grey;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.pakket:focus{
+  width: 280px;
+}
+
 .box input[type = "submit"]{
   border:0;
   background: none;
