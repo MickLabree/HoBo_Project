@@ -31,6 +31,7 @@ if(isset($_POST['register'])){
 	    		<input type="password" name="password" placeholder="Password" required>
 	    		<input type="password" name="conf-password" placeholder="Password" required>
           <select name="option" class="pakket">
+            <option name="" value=""></option>
             <option name="basis" value="1">Basis Paket</option>
             <option name="extra" value="2">Extra Paket</option>
             <option name="platinum" value="3">Platinum Paket</option>
