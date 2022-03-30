@@ -28,7 +28,7 @@ class User extends DbConfig{
 
     public function login($data){
         try {
-            $user = $this->getUser($data['voornaam']);
+            $user = $this->getUser($data['email']);
             if (!$user) {
                 throw new Exception('Gebruiker bestaat niet.');
             }
@@ -37,8 +37,8 @@ class User extends DbConfig{
             }
             session_start();
             $_SESSION['ingelogd'] = true;
-            $_SESSION['voornaam'] = $user->voornaam;
-            header("Location: index.html");
+            $_SESSION['email'] = $user->email;
+            header("Location: index.php");
         } catch (Exception $e) {
             echo $e->getMessage();
         }
@@ -51,10 +51,10 @@ class User extends DbConfig{
         return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
-    public function getUser($voornaam){
-        $sql = "SELECT * FROM klant WHERE voornaam = :voornaam";
+    public function getUser($email){
+        $sql = "SELECT * FROM klant WHERE email = :email";
         $stmt = $this->connect()->prepare($sql);
-        $stmt->bindParam(":voornaam", $voornaam);
+        $stmt->bindParam(":email", $email);
         $stmt->execute();
         return $stmt->fetch(PDO::FETCH_OBJ);
     }

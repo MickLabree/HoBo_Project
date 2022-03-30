@@ -21,8 +21,6 @@ if (isset($_POST['login'])) {
             <form class="box" method="post">
                 <img src="img/logo.png" width="200" alt="Logo">
                 <h1>Login</h1>
-                <input type="text" name="Voornaam" placeholder="Voornaam" required>
-                <input type="text" name="achternaam" placeholder="Achternaam" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
                 <input type="submit" name="login" value="Login">
