@@ -109,20 +109,11 @@
             <article>
                 <a href="#">
                     <img src="img/Spider-Man_No-Way-Home-768x1138.jpg" alt="Spider-Man" height="300">
-                    <?php
-                        for($i = 0; $i < count($zoek->getSeries()); $i++){
-                            $text = $zoek->getSeries()[$i]->SerieTitel . " ";
-                            if($i % 5 == 0 && $i > 0){
-                              $text .= "<br>";
-                            }
-                            echo $text;
-                          }
-                    ?>
                     <h1>Spider-Man No Way Home</h1>
                     <p>2021 • 148m Movie</p>
                 </a>
             </article>
-            <!-- <article>
+            <article>
                 <a href="#">
                     <img src="img/strangerthingsl.png" alt="Spider-Man" height="300">
                     <h1>Stranger Things</h1>
@@ -205,7 +196,7 @@
                     <h1>Stranger Things</h1>
                     <p>2021 • 148m Movie</p>
                 </a>
-            </article> -->
+            </article>
 
         </section>
 
