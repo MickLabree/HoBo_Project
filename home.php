@@ -20,6 +20,12 @@
                 <li><a href="#" style="margin-right: 20px;"><i class="fa-solid fa-user"></i></a><a href="#"><i class="fas fa-sign-out-alt"></i></a></li>
             </ul>
         </nav>
+        <?php  
+        session_start();
+        if(!$_SESSION['ingelogd']){
+            header("Location: login.php");
+        }
+        ?>
     </header>
 
 
