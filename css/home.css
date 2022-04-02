@@ -182,14 +182,16 @@ header nav ul li a:hover{
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-  }
+    }
     #flex article img{
         border-radius: 5%;
     }
     #flex article{
         padding: 2vh;
     }
-  .item-ligma {
+
+
+  /* .item-ligma {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -212,7 +214,7 @@ header nav ul li a:hover{
 
   .item-ligma a{
     color: white;
-  }
+  } */
 
 
      /* Footer */
