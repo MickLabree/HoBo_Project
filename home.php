@@ -1,3 +1,11 @@
+<?php
+require_once "class/DbConfig.php";
+require_once "class/serieinfo.php";
+$serieIns = new SerieInfo();
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,101 +111,22 @@
         </div>
 
 
-        <!-- test -->
+        <!-- Series -->
 
-        <section class="item-ligma">
-            <article>
-                <a href="#">
-                    <img src="img/Spider-Man_No-Way-Home-768x1138.jpg" alt="Spider-Man" height="300">
-                    <h1>Spider-Man No Way Home</h1>
-                    <p>2021 • 148m Movie</p>
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                    <img src="img/strangerthingsl.png" alt="Spider-Man" height="300">
-                    <h1>Stranger Things</h1>
-                    <p>2021 • 148m Movie</p>
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                    <img src="img/thecrown.png" alt="Spider-Man" height="300">
-                    <h1>Stranger Things</h1>
-                    <p>2021 • 148m Movie</p>
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                    <img src="img/narcosmexico.jpg" alt="Spider-Man" height="300">
-                    <h1>Stranger Things</h1>
-                    <p>2021 • 148m Movie</p>
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                    <img src="img/Spider-Man_No-Way-Home-768x1138.jpg" alt="Spider-Man" height="300">
-                    <h1>Stranger Things</h1>
-                    <p>2021 • 148m Movie</p>
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                    <img src="img/strangerthingsl.png" alt="Spider-Man" height="300">
-                    <h1>Stranger Things</h1>
-                    <p>2021 • 148m Movie</p>
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                    <img src="img/narcosmexico.jpg" alt="Spider-Man" height="300">
-                    <h1>Stranger Things</h1>
-                    <p>2021 • 148m Movie</p>
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                    <img src="img/narcosmexico.jpg" alt="Spider-Man" height="300">
-                    <h1>Stranger Things</h1>
-                    <p>2021 • 148m Movie</p>
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                    <img src="img/narcosmexico.jpg" alt="Spider-Man" height="300">
-                    <h1>Stranger Things</h1>
-                    <p>2021 • 148m Movie</p>
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                    <img src="img/narcosmexico.jpg" alt="Spider-Man" height="300">
-                    <h1>Stranger Things</h1>
-                    <p>2021 • 148m Movie</p>
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                    <img src="img/narcosmexico.jpg" alt="Spider-Man" height="300">
-                    <h1>Stranger Things</h1>
-                    <p>2021 • 148m Movie</p>
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                    <img src="img/narcosmexico.jpg" alt="Spider-Man" height="300">
-                    <h1>Stranger Things</h1>
-                    <p>2021 • 148m Movie</p>
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                    <img src="img/narcosmexico.jpg" alt="Spider-Man" height="300">
-                    <h1>Stranger Things</h1>
-                    <p>2021 • 148m Movie</p>
-                </a>
-            </article>
 
+        <section id="fotos">
+            <section id="flex">
+                <?php foreach($serieIns->getSerie() as $serie){ ?>
+                <article  style="color: white;">
+                
+                    <img src="./images/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="">
+                    <p><?php echo $serie->SerieTitel; ?></p>
+
+                </article>
+                <img src="./images/no-image.png" height="300px" width="200px" alt="" onerror="imgError(this);"/>
+                <?php } ?>
+
+            </section>
         </section>
 
 
