@@ -28,11 +28,16 @@
         </nav>
     </header>
 
-  <!-- main -->
-  <form method="POST" action="zoeken.php">
-    <input type="text" name="search" placeholder="Search"  onKeyUp='if(this.value==""){document.searchs.search.disabled="disabled";}else{document.searchs.search.disabled="";}' >
-    <button type="submit" name="submit-search">Search</button>
-  </form>
+  <!-- Zoeken -->
+  <section class="test">
+    <section id="search-box">
+      <h1>Zoeken</h1>
+      <form class="item-search-box" method="POST" action="zoeken.php">
+        <input class="search-input" type="text" name="search" placeholder="Zoeken" >
+        <button class="search-btn" type="submit" name="submit-search" value="Zoeken"><i class="fas fa-search"></i></button>
+      </form>
+    </section>
+  </section>
 
   <?php
     require_once 'class/Zoeken.php';
