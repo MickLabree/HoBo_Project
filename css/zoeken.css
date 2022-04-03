@@ -19,14 +19,21 @@ body{
     /* Series */
 
     #flex{
-        display: grid; 
-        grid-template-columns: 0fr 0fr 0fr 0fr 0fr 0fr 0fr; 
-        grid-gap: 20px;
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
-        align-content: center;
+        align-items: center;
 
     }
 
     #flex article{
         margin: 2vh;
+        width: 200px;
     }
+
+    /* #flex article p{
+        display: flex;
+        flex-wrap: wrap;
+        width: 200px;
+    } */
