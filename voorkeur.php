@@ -8,7 +8,14 @@ if (isset($_POST['update'])) {
     $update->edit($_POST);
 
 }
+session_start();
+if(!$_SESSION['ingelogd']){
+    header("Location: login.php");
+    // echo $_SESSION["Voornaam"];
+}
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">

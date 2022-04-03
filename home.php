@@ -35,6 +35,7 @@ $serieIns = new SerieInfo();
         }
         
         ?>
+        
     </header>
 
 

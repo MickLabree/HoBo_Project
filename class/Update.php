@@ -26,7 +26,7 @@ class Update extends DbConfig{
     
 
     public function getUpdate(){
-        $sql = "SELECT id FROM test";
+        $sql = "SELECT KlantNr FROM klant WHERE KlantNr = :rami";
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_OBJ);
