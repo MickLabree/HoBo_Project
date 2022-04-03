@@ -134,5 +134,7 @@
 
 #flex article{
     margin: 2vh;
+    margin-bottom: 3vh;
     width: 200px;
+    height: 300px;
 }
