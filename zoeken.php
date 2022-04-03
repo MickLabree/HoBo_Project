@@ -17,13 +17,13 @@
     <header>
         <nav>
             <ul>
-                <li><a class="active" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href="#">Home</a></li>
+                <li><a class="active" href="zoeken.php"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="home.php">Home</a></li>
                 <li><a href="#">Movies</a></li>
                 <li><img style="margin: 0;" src="img/logo.png" height="60" alt="Logo"></li>
                 <li><a href="#">Series</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#" style="margin-right: 20px;"><i class="fa-solid fa-user"></i></a><a href="#"><i id="singout" class="fas fa-sign-out-alt"></i></a></li>
+                <li><a href="profiel.php" style="margin-right: 20px;"><i class="fa-solid fa-user"></i></a><a href="logout.php"><i id="singout" class="fas fa-sign-out-alt"></i></a></li>
             </ul>
         </nav>
     </header>
