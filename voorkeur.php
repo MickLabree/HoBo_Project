@@ -25,7 +25,7 @@ if (isset($_POST['update'])) {
         <nav>
             <ul>
                 <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="home.html" class="active">Home</a></li>
                 <li><a href="#">Movies</a></li>
                 <li><img style="margin: 0;" src="img/logo.png" height="60" alt="Logo"></li>
                 <li><a href="#">Series</a></li>
