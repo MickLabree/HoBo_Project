@@ -1,3 +1,15 @@
+<?php
+require_once 'class/Update.php';
+
+$update = new Update();
+
+if (isset($_POST['update'])) {
+
+    $update->edit($_POST);
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,16 +40,18 @@
         <section class="profile">
             <form class="item-info" method="post">
                 <article  class="item-info1">
+                    <p>Klant Numer</p>
+                    <input type="text" name="KlantNr" placeholder="KlantNr">
                     <p>Voornaam</p>
-                    <input type="text" name="voornaam" placeholder="Voornaam">
+                    <input type="text" name="Voornaam" placeholder="Voornaam">
                     <p>Achternaam</p>
-                    <input type="text" name="achternaam" placeholder="Achternaam"><br>
+                    <input type="text" name="Achternaam" placeholder="Achternaam"><br>
                 </article>
                 <article class="item-info2">
                     <p>Email</p>
-                    <input type="email" name="email" placeholder="Email">
+                    <input type="text" name="Email" placeholder="Email"><br>
                     <p>Wachtwoord</p>
-                    <input type="password" name="password" placeholder="password">
+                    <input type="text" name="Password" placeholder="Wachtwoord"><br>
                     <input type="submit" name="update" value="Update">
                 </article>
                 
