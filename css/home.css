@@ -11,245 +11,128 @@
 	background-size: cover;
 }
 
-body{
-    background-color: #161620;
-    font-family: 'Roboto', sans-serif;
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
 }
 
-header{
-    height: 100px;
-    background-color: #1c1e31;
+.slide-image1{
+  width: 100%;
+  height: 90vh;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/spiderman.jpg) ;
 }
-
-header nav{
-    display: flex;
-    justify-content: center;
-    height: 100px;
+.slide-image2{
+  width: 100%;
+  height: 90vh;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/strangerthings.png) ;
 }
-
-header nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
+.slide-image3{
+  width: 100%;
+  height: 90vh;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/thecrown.jpg) ;
 }
-
-header nav ul li{
-    float: left;
-}
-
-.fa-solid{
-    color: white;
-    
-}
-
-header nav ul li{
-    margin: 1vh 3vw 1vh 3vw;
-}
-
-header nav ul li a{
-    font-size: 20px;
-    padding: 10px 15px;
-    border-radius: 10px;
-    color: white;
-    transition: all 250ms;
-}
-
-header nav ul li a:hover{
-    background-color: #92d050;
-}
-
-.active{
-    background-color: #92d050;
+.slide-image4{
+  width: 100%;
+  height: 90vh;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/marcos-mexico.jpg) ;
 }
 
 
-        /* Slideshow container */
-        .slideshow-container {
-          position: relative;
-          margin: auto;
-        }
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 250ms ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
-        .slide-image1{
-          width: 100%;
-          height: 90vh;
-          background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/spiderman.jpg) ;
-        }
-        .slide-image2{
-          width: 100%;
-          height: 90vh;
-          background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/strangerthings.png) ;
-        }
-        .slide-image3{
-          width: 100%;
-          height: 90vh;
-          background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/thecrown.jpg) ;
-        }
-        .slide-image4{
-          width: 100%;
-          height: 90vh;
-          background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/marcos-mexico.jpg) ;
-        }
-        
 
-        .prev, .next {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 16px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 250ms ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-        
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
-        .next {
-          right: 0;
-          border-radius: 3px 0 0 3px;
-        }
-        
 
-        .prev:hover, .next:hover {
-          background-color: rgba(0,0,0,0.8);
-        }
-        
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
 
-        .text {
-          color: white;
-          font-size: 18px;
-          padding: 8px 12px;
-          position: absolute;
-          bottom: 8px;
-          width: 60%;
-        }
 
-        .text h1{
-          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-        }
-        .text h1, p{
-          margin-bottom: 2vh;
-          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-        }
+.text {
+  color: white;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 60%;
+}
 
-        .slideshow-button{
-          color: #79c142;
-          border-color: #79c142;
-          font-size: 16px;
-          line-height: 32px;
-          height: 34px;
-          padding: 6px 27.2px;
-          border: 1px solid #79c142;
-          border-radius: 30px;
-          margin-right: 15px;
-        }
+.text h1{
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.text h1, p{
+  margin-bottom: 2vh;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 
-        .slideshow-button:hover{
-          color: black;
-          background-color: #79c142;
-        }
-        
-        .fade {
-          -webkit-animation-name: fade;
-          -webkit-animation-duration: 1.5s;
-          animation-name: fade;
-          animation-duration: 1.5s;
-        }
-        
-        @-webkit-keyframes fade {
-          from {opacity: .4} 
-          to {opacity: 1}
-        }
-        
-        @keyframes fade {
-          from {opacity: .4} 
-          to {opacity: 1}
-        }
-        
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-          .prev, .next,.text {font-size: 11px}
-        }
+.slideshow-button{
+  color: #79c142;
+  border-color: #79c142;
+  font-size: 16px;
+  line-height: 32px;
+  height: 34px;
+  padding: 6px 27.2px;
+  border: 1px solid #79c142;
+  border-radius: 30px;
+  margin-right: 15px;
+}
+
+.slideshow-button:hover{
+  color: black;
+  background-color: #79c142;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 
 
     /* Series */
 
-    #flex{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+#flex{
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-    #flex article{
-        padding: 2vh;
-    }
-
-     /* Footer */
-
-     #footer{
-        width: 100%;
-        height: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: #1c1e31;
-      }
-  
-      .footer-links{
-        flex: 2;
-        color: white;
-        margin-left: 2vw;
-      }
-
-      .footer-links p{
-        margin-right: 12vw;
-      }
-
-      .item-icons{
-          margin-left: 5vw;
-      }
-
-      .fab{
-        font-size: 27px;
-        padding: 10px;
-        margin: 0px 25px;
-        border-radius: 50%;
-        text-align: center;
-        transition: all 250ms;
-      }
-      
-      .fab:hover{
-        background-color: #79c142;
-      }
-  
-      .footer-center{
-        text-align: center;
-        flex: 2;
-        color: white;
-      }
-
-      .footer-center nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .footer-center nav ul{
-        text-align: left;
-        margin-right: 1vw;
-      }
-  
-      .footer-center h1{
-        font-size: 23px;
-        margin-bottom: 10px;
-      }
-  
-      .footer-center li a{
-        color: #ffffff;
-      }
-      
+#flex article{
+    margin: 2vh;
+    width: 200px;
+}
