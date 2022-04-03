@@ -11,7 +11,6 @@ if (isset($_POST['update'])) {
 session_start();
 if(!$_SESSION['ingelogd']){
     header("Location: login.php");
-    // echo $_SESSION["Voornaam"];
 }
 ?>
 
