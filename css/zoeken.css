@@ -18,22 +18,17 @@ body{
 
     /* Series */
 
-    #flex{
-        display: flex; 
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    #flex article{
-        margin: 2vh;
-        width: 200px;
-    }
-
-    /* #flex article p{
-        display: flex;
-        flex-wrap: wrap;
-        width: 200px;
-    } */
+#flex{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+    
+#flex article{
+    margin: 2vh;
+    margin-bottom: 3vh;
+    width: 200px;
+    height: 300px;
+}
