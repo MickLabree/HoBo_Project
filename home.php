@@ -118,10 +118,8 @@ $serieIns = new SerieInfo();
             <section id="flex">
                 <?php foreach($serieIns->getSerie() as $serie){ ?>
                 <article  style="color: white;">
-
-                    <img src="./images/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="">
+                    <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
                     <p><?php echo $serie->SerieTitel; ?></p>
-
                 </article>
             <?php } ?>
 
