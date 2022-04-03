@@ -56,11 +56,23 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    background-color: #92d050;
+  color: black;
+  background-color: #92d050;
+}
+
+header nav ul li a i:hover{
+  color: black;
+  background-color: #92d050;
 }
 
 .active{
-    background-color: #92d050;
+  color: black;
+  background-color: #92d050;
+}
+
+.active i{
+  color: black;
+  background-color: #92d050;
 }
 
 
