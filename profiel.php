@@ -12,6 +12,9 @@ session_start();
 if(!$_SESSION['ingelogd']){
     header("Location: login.php");
 }
+
+$user = $update->getUpdate($_SESSION['email']);
+
 ?>
 
 
@@ -46,16 +49,16 @@ if(!$_SESSION['ingelogd']){
         <section class="profile">
             <form class="item-info" method="post">
                 <article  class="item-info1">
-                    <p>Klant Numer</p>
-                    <input type="text" name="KlantNr" placeholder="KlantNr">
                     <p>Voornaam</p>
-                    <input type="text" name="Voornaam" placeholder="Voornaam">
+                    <input type="text" value='<?php echo $user[0]->Voornaam;?>' name="Voornaam" placeholder="Voornaam">
+                    <p>Tussenvoegsel</p>
+                    <input type="text" value='<?php echo $user[0]->Tussenvoegsel;?>' name="Tussenvoegsel" placeholder="Tussenvoegsel">
                     <p>Achternaam</p>
-                    <input type="text" name="Achternaam" placeholder="Achternaam"><br>
+                    <input type="text" value='<?php echo $user[0]->Achternaam;?>' name="Achternaam" placeholder="Achternaam"><br>
                 </article>
                 <article class="item-info2">
                     <p>Email</p>
-                    <input type="text" name="Email" placeholder="Email"><br>
+                    <input type="text" value='<?php echo $user[0]->Email;?>' name="Email" placeholder="Email"><br>
                     <p>Wachtwoord</p>
                     <input type="text" name="Password" placeholder="Wachtwoord"><br>
                     <input type="submit" name="update" value="Update">

@@ -37,7 +37,7 @@ class User extends DbConfig{
             }
             session_start();
             $_SESSION['ingelogd'] = true;
-            $_SESSION['email'] = $user->email;
+            $_SESSION['email'] = $user->Email;
             header("Location: home.php");
         } catch (Exception $e) {
             echo $e->getMessage();

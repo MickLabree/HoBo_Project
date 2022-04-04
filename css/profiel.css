@@ -21,14 +21,14 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50vh;
+    /* height: 50vh; */
 }
 
 .item-info{
     display: flex;
     align-items: center;
     width: 50vw;
-    height: 40vh;
+    /* height: 40vh; */
     padding: 50px;
     border-radius: 50px;
     background: black;

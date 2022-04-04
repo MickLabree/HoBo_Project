@@ -1,9 +1,13 @@
 <?php
 require_once "class/DbConfig.php";
 require_once "class/serieinfo.php";
+require_once 'class/Update.php';
 $serieIns = new SerieInfo();
-
-
+$update = new Update();
+session_start();
+if(!$_SESSION['ingelogd']){
+    header("Location: login.php");
+}
 ?>
 
 <!DOCTYPE html>
@@ -29,14 +33,6 @@ $serieIns = new SerieInfo();
                 <li><a href="profiel.php" style="margin-right: 20px;"><i class="fa-solid fa-user"></i></a><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
             </ul>
         </nav>
-        <?php  
-        session_start();
-        if(!$_SESSION['ingelogd']){
-            header("Location: login.php");
-        }
-        
-        ?>
-        
     </header>
 
 
