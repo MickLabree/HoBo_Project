@@ -54,18 +54,37 @@ $user = $update->getUpdate($_SESSION['email']);
                     <p>Tussenvoegsel</p>
                     <input type="text" value='<?php echo $user[0]->Tussenvoegsel;?>' name="Tussenvoegsel" placeholder="Tussenvoegsel">
                     <p>Achternaam</p>
-                    <input type="text" value='<?php echo $user[0]->Achternaam;?>' name="Achternaam" placeholder="Achternaam"><br>
+                    <input type="text" value='<?php echo $user[0]->Achternaam;?>' name="Achternaam" placeholder="Achternaam">
+                    <p>Genres</p>
+                    <select name="option" class="pakket">
+                        <option><?php echo $user[0]->Genre;?></option>
+                        <?php foreach($update->getGenre() as $Genre){ ?>
+                        <article>
+                                <option name="Genre"><?php echo $Genre->GenreNaam; ?></option>
+                        </article>
+                        <?php } ?>
+                        <option name="Genre" value='1'><?php echo $user[0]->Genre;?></option>
+                        <option name="extra" value="2">Extra Paket</option>
+                        <option name="platinum" value="3">Platinum Paket</option>
+                    </select>
+                    <input type="text" value='<?php echo $user[0]->Genre;?>' name="Genre" placeholder="Genre">
                 </article>
                 <article class="item-info2">
                     <p>Email</p>
-                    <input type="text" value='<?php echo $user[0]->Email;?>' name="Email" placeholder="Email"><br>
+                    <input type="text" value='<?php echo $user[0]->Email;?>' name="Email" placeholder="Email">
                     <p>Wachtwoord</p>
-                    <input type="text" name="Password" placeholder="Wachtwoord"><br>
+                    <input type="text" name="Password" placeholder="Wachtwoord">
                     <input type="submit" name="update" value="Update">
                 </article>
                 
             </form>
         </section>
+
+                <?php foreach($update->getGenre() as $Genre){ ?>
+                    <article>
+                            <p style="color: white;"><?php echo $Genre->GenreNaam; ?></p>
+                    </article>
+                <?php } ?>
 
 
 

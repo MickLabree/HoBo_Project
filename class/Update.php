@@ -6,10 +6,10 @@ class Update extends DbConfig{
 
     public function edit($data){
         try{
-            $sql = "UPDATE klant SET  Voornaam=:Voornaam, Tussenvoegsel=:Tussenvoegsel, Achternaam=:Achternaam, Email=:Email, Password=:Password WHERE Email= :Email";
+            $sql = "UPDATE klant SET  Voornaam=:Voornaam, Tussenvoegsel=:Tussenvoegsel, Achternaam=:Achternaam, Email=:Email, Genre=:Genre, Password=:Password WHERE Email= :Email";
             $encryptedPassword = password_hash($data['Password'], PASSWORD_BCRYPT, ['cost' => 12]);
             $stmt = $this->connect()->prepare($sql);
-            $stmt->bindParam(":KlantNr", $data['KlantNr']);
+            $stmt->bindParam(":Genre", $data['Genre']);
             $stmt->bindParam(":Voornaam", $data['Voornaam']);
             $stmt->bindParam(":Tussenvoegsel", $data['Tussenvoegsel']);
             $stmt->bindParam(":Achternaam", $data['Achternaam']);
@@ -34,6 +34,13 @@ class Update extends DbConfig{
         return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
     
+
+    public function getGenre(){
+        $sql = "SELECT * FROM Genre";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_OBJ);
+    }
 }
 
 ?>
