@@ -64,8 +64,6 @@ $user = $update->getUpdate($_SESSION['email']);
                         </article>
                         <?php } ?>
                         <option name="Genre" value='1'><?php echo $user[0]->Genre;?></option>
-                        <option name="extra" value="2">Extra Paket</option>
-                        <option name="platinum" value="3">Platinum Paket</option>
                     </select>
                     <input type="text" value='<?php echo $user[0]->Genre;?>' name="Genre" placeholder="Genre">
                 </article>
