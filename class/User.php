@@ -44,15 +44,15 @@ class User extends DbConfig{
         }
     }
 
-    // public function getUsers(){
-    //     $sql = "SELECT * FROM klant";
-    //     $stmt = $this->connect()->prepare($sql);
-    //     $stmt->execute();
-    //     return $stmt->fetchAll(PDO::FETCH_OBJ);
-    // }
+    public function getUsers(){
+        $sql = "SELECT * FROM klant";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_OBJ);
+    }
 
     public function getUser($email){
-        $sql = "SELECT * FROM klant WHERE email = :email";
+        $sql = "SELECT * FROM klant WHERE Email = :email";
         $stmt = $this->connect()->prepare($sql);
         $stmt->bindParam(":email", $email);
         $stmt->execute();
