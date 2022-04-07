@@ -15,150 +15,103 @@ body{
     background-color: #161620;
     font-family: 'Roboto', sans-serif;
 }
+    /* Zoeken */
 
-    /* zoeken */
-    /* #box{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
+.test{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
 
-    .box{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 400px;
-        padding: 40px;
-        text-align: center;
-      }
-      .box h1{
-        color: white;
-        font-weight: 500;
-      }
-      .box input[type = "text"]{
-        border:0;
-        background: none;
-        display: block;
-        margin: 20px auto;
-        text-align: center;
-        border: 2px solid #3498db;
-        padding: 14px 10px;
-        width: 200px;
-        outline: none;
-        color: white;
-        border-radius: 24px;
-        transition: 0.25s;
-      }
-      .box input[type = "text"]:focus{
-        width: 280px;
-        border-color: green;
-      }
-      
-      .box input[type = "submit"]{
-        border:0;
-        background: none;
-        display: block;
-        margin: 20px auto;
-        text-align: center;
-        border: 2px solid green;
-        padding: 14px 40px;
-        outline: none;
-        color: white;
-        border-radius: 24px;
-        transition: 0.25s;
-        cursor: pointer;
-      }
+#search-box{
+  width: 20.833333333333332vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+}
 
-      .box input[type = "submit"]:hover{
-        background: green;
-      } */
+#search-box h1{
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 2vh;
+}
 
-      .test{
-        display: flex;
-        /* flex-direction: column; */
-        justify-content: center;
-        align-items: center;
-      }
+.item-search-box {
+  /* border: 2px solid white; */
+  background: black;
+  height: 70px;
+  border-radius: 50px;
+  padding: 10px;
+}
 
-      #search-box{
-        width: 20.833333333333332vw;
-        height: 20vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* background-color: black; */
-      }
+.search-btn {
+  color: white;
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 250ms;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
 
-      #search-box h1{
-        color: white;
-        font-size: 30px;
-        font-weight: 500;
-        margin-bottom: 2vh;
-      }
+.fa-search {
+  background: black;
+  font-size: 24px;
+}
 
-      .item-search-box {
-        /* border: 2px solid white; */
-        background: black;
-        height: 70px;
-        border-radius: 50px;
-        padding: 10px;
-      }
-      
-      .search-btn {
-        color: white;
-        float: right;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: 250ms;
-        outline: none;
-        border: none;
-        cursor: pointer;
-      }
-      
-      .fa-search {
-        background: black;
-        font-size: 24px;
-      }
-      
-      .search-input {
-        border: none;
-        background: none;
-        outline: none;
-        float: left;
-        padding: 0;
-        color: white;
-        font-size: 20px;
-        transition: 250ms;
-        line-height: 50px;
-        width: 250px;
-      }
-      
-      /* .search-box:hover > .search-input {
-        width: 250px;
-        padding: 0 7px;
-      } */
+.search-input {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 20px;
+  transition: 250ms;
+  line-height: 50px;
+  width: 250px;
+}
+
+/* .search-box:hover > .search-input {
+  width: 250px;
+  padding: 0 7px;
+} */
 
     /* Series */
 
 #flex{
-    display: flex; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex; 
+  overflow: scroll;
 }
-    
+
+#flex::-webkit-scrollbar{
+  display: none; 
+}
+
 #flex article{
     margin: 2vh;
-    margin-bottom: 3vh;
+    margin-bottom: 10vh;
     width: 200px;
     height: 300px;
+}
+
+#flex h3{
+  position: absolute;
+  text-align: center;
+}
+
+#fotos h3{
+  color: white;
+  text-align: center;
 }

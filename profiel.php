@@ -5,15 +5,16 @@ $update = new Update();
 
 if (isset($_POST['update'])) {
 
-    $update->edit($_POST);
+    $update->edit($_POST);  
 
 }
+
 session_start();
 if(!$_SESSION['ingelogd']){
     header("Location: login.php");
 }
-
 $user = $update->getUpdate($_SESSION['email']);
+
 
 ?>
 
@@ -63,11 +64,7 @@ $user = $update->getUpdate($_SESSION['email']);
                                 <option name="Genre"><?php echo $Genre->GenreNaam; ?></option>
                         </article>
                         <?php } ?>
-                        <option name="Genre" value='1'><?php echo $user[0]->Genre;?></option>
-                        <option name="extra" value="2">Extra Paket</option>
-                        <option name="platinum" value="3">Platinum Paket</option>
                     </select>
-                    <input type="text" value='<?php echo $user[0]->Genre;?>' name="Genre" placeholder="Genre">
                 </article>
                 <article class="item-info2">
                     <p>Email</p>
@@ -79,14 +76,6 @@ $user = $update->getUpdate($_SESSION['email']);
                 
             </form>
         </section>
-
-                <?php foreach($update->getGenre() as $Genre){ ?>
-                    <article>
-                            <p style="color: white;"><?php echo $Genre->GenreNaam; ?></p>
-                    </article>
-                <?php } ?>
-
-
 
     <script src="https://kit.fontawesome.com/148dcfd780.js" crossorigin="anonymous"></script>
 </body>

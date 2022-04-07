@@ -14,6 +14,19 @@ class SerieInfo extends DbConfig {
         return substr("0000" . $id, -5) . ".jpg"; //000044
     }
 
+    public function getSeriesByGenre($genre){
+        $sql = "SELECT * FROM genre
+                JOIN serie_genre ON
+                genre.GenreID = serie_genre.GenreID
+                JOIN serie ON
+                serie_genre.SerieID = serie.SerieID
+                WHERE GenreNaam = :genre";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->bindParam(':genre', $genre);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_OBJ);
+    }
+
 }
 
 
