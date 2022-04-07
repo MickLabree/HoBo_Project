@@ -10,35 +10,34 @@ if(!$_SESSION['ingelogd']){
 }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/global.css">
-    <title>HoBo | Home</title>
+    <link rel="stylesheet" href="css/bezoeker.css">
+    <title>Bezoeker</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="zoeken.php"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href="home.php" class="active">Home</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><img style="margin: 0;" src="img/logo.png" height="60" alt="Logo"></li>
-                <li><a href="#">Series</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="profiel.php" style="margin-right: 20px;"><i class="fa-solid fa-user"></i></a><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
-            </ul>
-        </nav>
-    </header>
+        <!-- Header -->
+        <header>
+            <nav>
+                <ul>
+                    <!-- <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li> -->
+                    <li><a href="bezoeker.php" class="active">Series/Movies</a></li>
+                    <li><img style="margin: 0;" src="img/logo.png" height="60" alt="Logo"></li>
+                    <li><a href="login.php">Login/Register</a></li>
+                </ul>
+            </nav>
+        </header>
 
-
+        
             <!-- Slideshow -->
         
-        <div class="slideshow-container">
+            <div class="slideshow-container">
         
         <div class="mySlides fade">
             <div class="slide-image1"></div>
@@ -50,8 +49,7 @@ if(!$_SESSION['ingelogd']){
                     able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help 
                     from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.
                 </p>
-                <a href="#" class="slideshow-button">Add to list <i class="fas fa-heart"></i></a>
-                <a href="#" class="slideshow-button">Watch now</a>
+                <a href="#" class="slideshow-button">Sing in <i class="fa fa-sign-in" aria-hidden="true"></i></a>
             </div>
         </div>
     
@@ -64,8 +62,7 @@ if(!$_SESSION['ingelogd']){
                     In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search 
                     for answers, the children unravel a series of extraordinary mysteries.
                 </p>
-                <a href="#" class="slideshow-button">Add to list <i class="fas fa-heart"></i></a>
-                <a href="#" class="slideshow-button">Watch now</a>
+                <a href="#" class="slideshow-button">Sing in <i class="fa fa-sign-in" aria-hidden="true"></i></a>
             </div>
         </div>
         
@@ -78,11 +75,10 @@ if(!$_SESSION['ingelogd']){
                     Based on an award-winning play ("The Audience") by showrunner Peter Morgan, this lavish, Netflix-original drama 
                     chronicles the life of Queen Elizabeth II from the 1940s to modern times. The series begins with an inside look 
                     at the early reign of the queen, who ascended the throne at age 25 after the death of her father, King George VI.
-                    As the decades pass, personal intrigues, romances, and political rivalries are revealed that played a big role in 
-                    events that shaped the later years of the 20th century.
+                     As the decades pass, personal intrigues, romances, and political rivalries are revealed that played a big role in 
+                     events that shaped the later years of the 20th century.
                 </p>
-                <a href="#" class="slideshow-button">Add to list <i class="fas fa-heart"></i></a>
-                <a href="#" class="slideshow-button">Watch now</a>
+                <a href="#" class="slideshow-button">Sing in <i class="fa fa-sign-in" aria-hidden="true"></i></a>
             </div>
         </div>
 
@@ -99,8 +95,7 @@ if(!$_SESSION['ingelogd']){
                     Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic 
                     chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.
                 </p>
-                <a href="#" class="slideshow-button">Add to list <i class="fas fa-heart"></i></a>
-                <a href="#" class="slideshow-button">Watch now</a>
+                <a href="#" class="slideshow-button">Sing in <i class="fa fa-sign-in" aria-hidden="true"></i></a>
             </div>
         </div>
         
@@ -109,26 +104,9 @@ if(!$_SESSION['ingelogd']){
         </div>
 
 
-        <!-- Series -->
-        
-        
 
+        <!-- Alle series -->
         <section id="fotos">
-            <h3>Genre - <?= $_SESSION['genre'] ?></h3>
-            <section id="flex">
-                <?php foreach($serieIns->getSeriesByGenre($_SESSION['genre']) as $serie){ ?>
-                    <article>
-                        <a href="#" style="color: white;">
-                            <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
-                            <p><?php echo $serie->SerieTitel; ?></p>
-                        </a>
-                    </article>
-                <?php } ?>
-            </section>
-        </section>
-
-        <section id="fotos">
-            <h3>All Series - </h3>
             <section id="flex">
                 <?php foreach($serieIns->getSerie() as $serie){ ?>
                     <article>
@@ -142,7 +120,9 @@ if(!$_SESSION['ingelogd']){
         </section>
 
 
-    <!-- footer -->
+
+        
+    <!-- Footer -->
 
     <section id="footer">
         <article class="footer-links">
