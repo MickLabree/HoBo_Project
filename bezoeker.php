@@ -2,6 +2,9 @@
 require_once "class/DbConfig.php";
 require_once "class/serieinfo.php";
 require_once 'class/Update.php';
+require_once 'class/Zoeken.php';
+$serieIns = new Zoeken();
+$zoek = new Zoeken();
 $serieIns = new SerieInfo();
 $update = new Update();
 ?>
@@ -15,6 +18,7 @@ $update = new Update();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/bezoeker.css">
+    <link rel="stylesheet" href="css/zoeken.css">
     <title>Bezoeker</title>
 </head>
 <body>
@@ -101,8 +105,35 @@ $update = new Update();
 
 
 
+          <!-- Zoeken -->
+        <section class="test">
+            <section id="search-box">
+            <h1>Zoeken</h1>
+            <form class="item-search-box" method="POST">
+                <input class="search-input" type="text" name="search" placeholder="Zoeken" required>
+                <button class="search-btn" type="submit" name="submit-search" value="Zoeken"><i class="fas fa-search"></i></button>
+            </form>
+            </section>
+        </section>
+
+        <section id="fotos">
+            <section id="flex">
+                <?php if(isset($_POST["submit-search"])) {?>
+                    <!-- <h3>Search Result</h3> -->
+                 <?php foreach($zoek->zoeken($_POST['search']) as $serie){?>
+                    <article>
+                        <a href="#" style="color: white;">
+                        <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
+                        <p><?php echo $serie->SerieTitel; ?></p>
+                        </a>
+                    </article>
+                <?php } }?>
+            </section>
+        </section>
+
         <!-- Alle series -->
         <section id="fotos">
+            <h3>All Series - </h3>
             <section id="flex">
                 <?php foreach($serieIns->getSerie() as $serie){ ?>
                     <article>

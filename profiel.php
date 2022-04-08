@@ -75,8 +75,10 @@ $user = $update->getUpdate($_SESSION['email']);
                     <input type="submit" name="update" value="Update">
                 </article>
                 
+                
             </form>
         </section>
+        <?php echo $user[0]->Voornaam;?>
 
     <script src="https://kit.fontawesome.com/148dcfd780.js" crossorigin="anonymous"></script>
 </body>
