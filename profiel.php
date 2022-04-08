@@ -11,7 +11,7 @@ if (isset($_POST['update'])) {
 
 session_start();
 if(!$_SESSION['ingelogd']){
-    header("Location: login.php");
+    header("Location: bezoeker.php");
 }
 
 $user = $update->getUpdate($_SESSION['email']);

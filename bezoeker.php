@@ -4,10 +4,6 @@ require_once "class/serieinfo.php";
 require_once 'class/Update.php';
 $serieIns = new SerieInfo();
 $update = new Update();
-session_start();
-if(!$_SESSION['ingelogd']){
-    header("Location: login.php");
-}
 ?>
 
 
@@ -49,7 +45,7 @@ if(!$_SESSION['ingelogd']){
                     able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help 
                     from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.
                 </p>
-                <a href="#" class="slideshow-button">Sing in <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                <a href="login.php" class="slideshow-button">Sing in <i class="fa fa-sign-in" aria-hidden="true"></i></a>
             </div>
         </div>
     
@@ -62,7 +58,7 @@ if(!$_SESSION['ingelogd']){
                     In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search 
                     for answers, the children unravel a series of extraordinary mysteries.
                 </p>
-                <a href="#" class="slideshow-button">Sing in <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                <a href="login.php" class="slideshow-button">Sing in <i class="fa fa-sign-in" aria-hidden="true"></i></a>
             </div>
         </div>
         
@@ -78,7 +74,7 @@ if(!$_SESSION['ingelogd']){
                      As the decades pass, personal intrigues, romances, and political rivalries are revealed that played a big role in 
                      events that shaped the later years of the 20th century.
                 </p>
-                <a href="#" class="slideshow-button">Sing in <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                <a href="login.php" class="slideshow-button">Sing in <i class="fa fa-sign-in" aria-hidden="true"></i></a>
             </div>
         </div>
 
@@ -95,7 +91,7 @@ if(!$_SESSION['ingelogd']){
                     Guadalajara to take on a new post, he learns his assignment is more challenging than he imagined. A tragic 
                     chain of events unfolds as Camarena gains intelligence on Gallardo and becomes more entangled in the mission.
                 </p>
-                <a href="#" class="slideshow-button">Sing in <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                <a href="login.php" class="slideshow-button">Sing in <i class="fa fa-sign-in" aria-hidden="true"></i></a>
             </div>
         </div>
         
