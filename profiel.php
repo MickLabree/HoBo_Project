@@ -5,7 +5,7 @@ $update = new Update();
 
 if (isset($_POST['update'])) {
 
-    $update->edit($_POST);  
+    $update->edit($_POST);
 
 }
 
@@ -13,6 +13,7 @@ session_start();
 if(!$_SESSION['ingelogd']){
     header("Location: login.php");
 }
+
 $user = $update->getUpdate($_SESSION['email']);
 
 
