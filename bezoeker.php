@@ -122,10 +122,8 @@ $update = new Update();
                     <!-- <h3>Search Result</h3> -->
                  <?php foreach($zoek->zoeken($_POST['search']) as $serie){?>
                     <article>
-                        <a href="#" style="color: white;">
                         <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
-                        <p><?php echo $serie->SerieTitel; ?></p>
-                        </a>
+                        <p style="color: white;"><?php echo $serie->SerieTitel; ?></p>
                     </article>
                 <?php } }?>
             </section>
