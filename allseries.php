@@ -20,7 +20,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/allseries.css">
     <title>HoBo | Contact</title>
 </head>
 <body>
@@ -31,19 +31,29 @@
             <ul>
                 <li><a href="zoeken.php"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 <li><a href="home.php">Home</a></li>
-                <li><a href="#">Movies</a></li>
+                <li><a class="active" href="allseries.php">Movies/Series</a></li>
                 <li><img style="margin: 0;" src="img/logo.png" height="60" alt="Logo"></li>
-                <li><a href="#">Series</a></li>
-                <li><a class="active" href="contact.php">Contact</a></li>
-                <li><a href="profiel.php" style="margin-right: 20px;"><i class="fa-solid fa-user"></i></a><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
             </ul>
         </nav>
     </header>
 
 
-    
-
-
+    <section id="fotos">
+            <h3>All Series - </h3>
+            <section id="flex">
+                <?php foreach($serieIns->getSerie() as $serie){ ?>
+                    <article>
+                        <a href="#" style="color: white;">
+                            <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
+                            <p><?php echo $serie->SerieTitel; ?></p>
+                        </a>
+                    </article>
+                <?php } ?>
+            </section>
+        </section>
 
 
     <!-- Footer -->
