@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* CSS Document */
+
+*{
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	background-size: cover;
+}
+
+
+#flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#flex article img{
+    border-radius: 5%;
+}
+#flex article{
+    padding: 2vh;
+}
