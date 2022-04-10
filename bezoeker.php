@@ -131,7 +131,7 @@ $update = new Update();
 
         <!-- Alle series -->
         <section id="fotos">
-            <h3>All Series - </h3>
+            <h3>All Movies/Series </h3>
             <section id="flex">
                 <?php foreach($serieIns->getSerie() as $serie){ ?>
                     <article>
