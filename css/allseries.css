@@ -3,7 +3,7 @@
 /* CSS Document */
 
 *{
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	list-style: none;
 	text-decoration: none;
@@ -11,15 +11,11 @@
 	background-size: cover;
 }
 
-body{
-    background-color: #161620;
-    font-family: 'Roboto', sans-serif;
-}
-    /* Zoeken */
+  /* Zoeken */
 
 .test{
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -31,7 +27,6 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: black; */
 }
 
 #search-box h1{
@@ -42,7 +37,6 @@ body{
 }
 
 .item-search-box {
-  /* border: 2px solid white; */
   background: #1c1e31;
   height: 70px;
   border-radius: 50px;
@@ -83,35 +77,24 @@ body{
   width: 250px;
 }
 
-/* .search-box:hover > .search-input {
-  width: 250px;
-  padding: 0 7px;
-} */
 
-    /* Series */
+#fotos h1{
+	text-align: center;
+	color: white;
+	margin: 5vh 0;
+  }
 
 #flex{
-  display: flex; 
-  overflow: scroll;
-}
-
-#flex::-webkit-scrollbar{
-  display: none; 
-}
-
-#flex article{
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  #flex article{
     margin: 2vh;
-    margin-bottom: 10vh;
+    margin-bottom: 8vh;
     width: 200px;
     height: 300px;
-}
-
-#flex h3{
-  position: absolute;
-  text-align: center;
-}
-
-#fotos h3{
-  color: white;
-  text-align: center;
 }
