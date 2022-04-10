@@ -8,9 +8,9 @@
     $serieIns = new SerieInfo();
     $update = new Update();
     session_start();
-    if($_SESSION['ingelogd']){
+    if(!$_SESSION['ingelogd']){
         header("Location: bezoeker.php");
-}
+    }
 
     if(isset($_POST["submit-search"])) {
       // foreach($zoek->zoeken($_POST['search']) as $serie){
