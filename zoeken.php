@@ -53,7 +53,7 @@
     <section id="search-box">
       <h1>Zoeken</h1>
       <form class="item-search-box" method="POST" action="zoeken.php">
-        <input class="search-input" type="text" name="search" placeholder="Zoeken" >
+        <input class="search-input" type="text" name="search" placeholder="Zoeken" required>
         <button class="search-btn" type="submit" name="submit-search" value="Zoeken"><i class="fas fa-search"></i></button>
       </form>
     </section>

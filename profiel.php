@@ -71,7 +71,7 @@ $user = $update->getUpdate($_SESSION['email']);
                     <p>Email</p>
                     <input type="text" value='<?php echo $user[0]->Email;?>' name="Email" placeholder="Email">
                     <p>Wachtwoord</p>
-                    <input type="text" name="Password" placeholder="Wachtwoord">
+                    <input type="password" name="Password" placeholder="Wachtwoord" required>
                     <input type="submit" name="update" value="Update">
                 </article>
                 

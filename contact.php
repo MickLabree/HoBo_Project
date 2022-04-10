@@ -52,25 +52,14 @@
       <img src="img/logo.png" alt="Logo" height="100">
             <section id="search-box">
             <h1>Zoeken</h1>
-            <form class="item-search-box" method="POST">
+            <form class="item-search-box" method="POST" action="zoeken.php">
                 <input class="search-input" type="text" name="search" placeholder="Zoeken" required>
                 <button class="search-btn" type="submit" name="submit-search" value="Zoeken"><i class="fas fa-search"></i></button>
             </form>
             </section>
         </section>
 
-        <section id="fotos">
-            <section id="flex">
-                <?php if(isset($_POST["submit-search"])) {?>
-                    <!-- <h3>Search Result</h3> -->
-                 <?php foreach($zoek->zoeken($_POST['search']) as $serie){?>
-                    <article>
-                        <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
-                        <p style="color: white;"><?php echo $serie->SerieTitel; ?></p>
-                    </article>
-                <?php } }?>
-            </section>
-        </section>
+
 
     <section id="item-overons">
         <h1>About Us</h1>
