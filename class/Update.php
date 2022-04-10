@@ -6,14 +6,15 @@ class Update extends DbConfig{
 
     public function edit($data){
         try{
-            $sql = "UPDATE klant SET  Voornaam=:Voornaam, Tussenvoegsel=:Tussenvoegsel, Achternaam=:Achternaam, Email=:Email, Genre=:Genre WHERE Email= :Email";
-            // $encryptedPassword = password_hash($data['Password'], PASSWORD_BCRYPT, ['cost' => 12]);
+            $sql = "UPDATE klant SET  Voornaam=:Voornaam, Tussenvoegsel=:Tussenvoegsel, Achternaam=:Achternaam, Email=:Email, Genre=:Genre, password=:password WHERE Email= :Email";
+            $encryptedPassword = password_hash($data['Password'], PASSWORD_BCRYPT, ['cost' => 12]);
             $stmt = $this->connect()->prepare($sql);
             $stmt->bindParam(":Genre", $data['option']);
             $stmt->bindParam(":Voornaam", $data['Voornaam']);
             $stmt->bindParam(":Tussenvoegsel", $data['Tussenvoegsel']);
             $stmt->bindParam(":Achternaam", $data['Achternaam']);
             $stmt->bindParam(":Email", $data['Email']);
+            $stmt->bindParam(":password", $encryptedPassword);
             session_start();
             $_SESSION['genre'] = $data['option'];
             if(!$stmt->execute()){

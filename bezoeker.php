@@ -19,7 +19,7 @@ $update = new Update();
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/bezoeker.css">
     <link rel="stylesheet" href="css/zoeken.css">
-    <title>Bezoeker</title>
+    <title>HoBo | Bezoeker</title>
 </head>
 <body>
         <!-- Header -->

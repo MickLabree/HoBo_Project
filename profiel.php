@@ -27,7 +27,7 @@ $user = $update->getUpdate($_SESSION['email']);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>HoBo | Profile</title>
 </head>
 <body>
     
@@ -40,7 +40,7 @@ $user = $update->getUpdate($_SESSION['email']);
                 <li><a href="#">Movies</a></li>
                 <li><img style="margin: 0;" src="img/logo.png" height="60" alt="Logo"></li>
                 <li><a href="#">Series</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
                 <li><a class="active" href="profiel.php" style="margin-right: 20px;"><i class="fa-solid fa-user"></i></a><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
                 <link rel="stylesheet" href="css/profiel.css">
                 <link rel="stylesheet" href="css/global.css">
@@ -71,7 +71,7 @@ $user = $update->getUpdate($_SESSION['email']);
                     <p>Email</p>
                     <input type="text" value='<?php echo $user[0]->Email;?>' name="Email" placeholder="Email">
                     <p>Wachtwoord</p>
-                    <input type="text" name="Password" placeholder="Wachtwoord">
+                    <input type="password" name="Password" placeholder="Wachtwoord" required>
                     <input type="submit" name="update" value="Update">
                 </article>
                 

@@ -28,7 +28,7 @@
   <link rel="icon" type="image/x-icon" href="img/logo1.png" width="100%">
   <link rel="stylesheet" href="css/zoeken.css">
   <link rel="stylesheet" href="css/global.css">
-  <title>HoBo | Home</title>
+  <title>HoBo | Zoeken</title>
 </head>
 
 <body>
@@ -42,7 +42,7 @@
                 <li><a href="#">Movies</a></li>
                 <li><img style="margin: 0;" src="img/logo.png" height="60" alt="Logo"></li>
                 <li><a href="#">Series</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
                 <li><a href="profiel.php" style="margin-right: 20px;"><i class="fa-solid fa-user"></i></a><a href="logout.php"><i id="singout" class="fas fa-sign-out-alt"></i></a></li>
             </ul>
         </nav>
@@ -53,7 +53,7 @@
     <section id="search-box">
       <h1>Zoeken</h1>
       <form class="item-search-box" method="POST" action="zoeken.php">
-        <input class="search-input" type="text" name="search" placeholder="Zoeken" >
+        <input class="search-input" type="text" name="search" placeholder="Zoeken" required>
         <button class="search-btn" type="submit" name="submit-search" value="Zoeken"><i class="fas fa-search"></i></button>
       </form>
     </section>
