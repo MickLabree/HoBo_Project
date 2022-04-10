@@ -40,7 +40,7 @@ $user = $update->getUpdate($_SESSION['email']);
                 <li><a href="#">Movies</a></li>
                 <li><img style="margin: 0;" src="img/logo.png" height="60" alt="Logo"></li>
                 <li><a href="#">Series</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
                 <li><a class="active" href="profiel.php" style="margin-right: 20px;"><i class="fa-solid fa-user"></i></a><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
                 <link rel="stylesheet" href="css/profiel.css">
                 <link rel="stylesheet" href="css/global.css">
