@@ -29,20 +29,33 @@
     <header>
         <nav>
             <ul>
-                <li><a href="zoeken.php"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="zoeken.php"><i class="fas fa-search"></i></a></li>
                 <li><a href="home.php">Home</a></li>
                 <li><a class="active" href="allseries.php">Movies/Series</a></li>
                 <li><img style="margin: 0;" src="img/logo.png" height="60" alt="Logo"></li>
-                <li><a href="contact.php">Contact</a></li>
                 <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                <li><a href="contact.php">Contact</a></li>
                 <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Zoeken -->
+    <section class="test">
+            <section id="search-box">
+            <h1>Zoeken</h1>
+            <form class="item-search-box" method="POST" action="zoeken.php">
+                <input class="search-input" type="text" name="search" placeholder="Zoeken" required>
+                <button class="search-btn" type="submit" name="submit-search" value="Zoeken"><i id="fa-search" class="fas fa-search"></i></button>
+            </form>
+            </section>
+        </section>
 
+
+
+    <!-- all movies/series -->
     <section id="fotos">
-            <h3>All Series - </h3>
+            <h1>All Movies/Series</h1>
             <section id="flex">
                 <?php foreach($serieIns->getSerie() as $serie){ ?>
                     <article>

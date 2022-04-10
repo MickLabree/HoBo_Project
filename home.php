@@ -24,12 +24,12 @@ if(!$_SESSION['ingelogd']){
     <header>
         <nav>
             <ul>
-                <li><a href="zoeken.php"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="zoeken.php"><i class="fas fa-search"></i></a></li>
                 <li><a href="home.php" class="active">Home</a></li>
                 <li><a href="allseries.php">Movies/Series</a></li>
                 <li><img style="margin: 0;" src="img/logo.png" height="60" alt="Logo"></li>
-                <li><a href="contact.php">Contact</a></li>
                 <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                <li><a href="contact.php">Contact</a></li>
                 <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
             </ul>
         </nav>

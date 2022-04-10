@@ -24,10 +24,12 @@ $user = $update->getUpdate($_SESSION['email']);
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HoBo | Profile</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/profiel.css">
+    <title>HoBo | Contact</title>
 </head>
 <body>
     
@@ -35,15 +37,13 @@ $user = $update->getUpdate($_SESSION['email']);
     <header>
         <nav>
             <ul>
-                <li><a href="zoeken.php"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="zoeken.php"><i class="fas fa-search"></i></a></li>
                 <li><a href="home.php">Home</a></li>
-                <li><a href="#">Movies</a></li>
+                <li><a href="allseries.php">Movies/Series</a></li>
                 <li><img style="margin: 0;" src="img/logo.png" height="60" alt="Logo"></li>
-                <li><a href="#">Series</a></li>
+                <li><a class="active" href="profiel.php" style="margin-right: 20px;">Profile</a></li>
                 <li><a href="contact.php">Contact</a></li>
-                <li><a class="active" href="profiel.php" style="margin-right: 20px;"><i class="fa-solid fa-user"></i></a><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
-                <link rel="stylesheet" href="css/profiel.css">
-                <link rel="stylesheet" href="css/global.css">
+                <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -78,7 +78,6 @@ $user = $update->getUpdate($_SESSION['email']);
                 
             </form>
         </section>
-        <?php echo $user[0]->Voornaam;?>
 
     <script src="https://kit.fontawesome.com/148dcfd780.js" crossorigin="anonymous"></script>
 </body>
