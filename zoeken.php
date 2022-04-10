@@ -28,7 +28,7 @@
   <link rel="icon" type="image/x-icon" href="img/logo1.png" width="100%">
   <link rel="stylesheet" href="css/zoeken.css">
   <link rel="stylesheet" href="css/global.css">
-  <title>HoBo | Home</title>
+  <title>HoBo | Zoeken</title>
 </head>
 
 <body>
