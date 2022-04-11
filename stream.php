@@ -35,7 +35,7 @@ $update = new Update();
         </nav>
     </header>
 
-    <iframe style="width: 100%; height: 80vh; margin-bottom: 10vh;" src="https://www.youtube.com/embed/Z1ZQMpp4BdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="width: 100%; height: 90vh; margin-bottom: 10vh;" src="https://www.youtube.com/embed/Z1ZQMpp4BdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             
     <section id="item-info">
         <article>
@@ -69,7 +69,7 @@ $update = new Update();
                 <?php foreach($serieIns->getSeries() as $serie){ ?>
                     <article>
                         <a href="#" style="color: white;">
-                            <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
+                            <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="250px" alt="" onerror='this.src="img/no-image.png"'>
                             <p><?php echo $serie->SerieTitel; ?></p>
                         </a>
                     </article>

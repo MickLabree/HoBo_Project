@@ -16,3 +16,16 @@
     justify-content: space-between;
     color: white;
 }
+
+#flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#flex article{
+	margin: 1vh;
+}
+
+#flex article img{
+	border-radius: 10px;
+}
