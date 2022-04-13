@@ -27,11 +27,21 @@ class SerieInfo extends DbConfig {
         return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
-    public function getAfleveringen($afleveringen, $seizoen){
+    public function getSeasonOfSerie($id){
         $sql = "SELECT * FROM seizoen
-                JOIN serie on serie.SerieID = seizoen.SeizoenID
+                JOIN serie on serie.SerieID = seizoen.SerieID
+                WHERE seizoen.SerieID = :serie";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->bindParam(':serie', $id);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_OBJ);
+    }
+
+    public function getAfleveringen($afleveringen, $seizoen){
+        $sql = "SELECT *, seizoen.Rang as sRang FROM seizoen
+                JOIN serie on serie.SerieID = seizoen.SerieID
                 JOIN aflevering on aflevering.SeizID = seizoen.SeizoenID
-                WHERE serie.SerieID = :serie AND seizoen.SeizoenID = :seizoen";
+                WHERE serie.SerieID = :serie AND seizoen.Rang = :seizoen";
         $stmt = $this->connect()->prepare($sql);
         $stmt->bindParam(':serie', $afleveringen);
         $stmt->bindParam(':seizoen', $seizoen);
