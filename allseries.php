@@ -61,7 +61,7 @@
                     <article>
                         <a href="afleveringen.php?serie=<?php echo $serie->SerieID ?>&seizoen=1" style="color: white;">
                             <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
-                            <p><?php echo $serie->SerieTitel; ?></p>
+                            <p><?php  echo' Titel: '. $serie->SerieTitel.'<br> Rating: <i class="fas fa-star" style="color:gold;"></i> ';  echo $serie->IMDBRating; ?></p>
                         </a>
                     </article>
                 <?php } ?>

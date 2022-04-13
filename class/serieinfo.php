@@ -4,7 +4,7 @@ require_once 'DbConfig.php';
 class SerieInfo extends DbConfig {
 
     public function getSerie(){
-        $sql = "SELECT * FROM serie";
+        $sql = "SELECT * FROM serie JOIN Seizoen ON Seizoen.SerieID=Serie.SerieID  WHERE Rang=1";
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_OBJ);
@@ -27,7 +27,8 @@ class SerieInfo extends DbConfig {
                 genre.GenreID = serie_genre.GenreID
                 JOIN serie ON
                 serie_genre.SerieID = serie.SerieID
-                WHERE GenreNaam = :genre";
+                JOIN Seizoen ON Seizoen.SerieID=Serie.SerieID
+                WHERE GenreNaam = :genre AND Rang=1";
         $stmt = $this->connect()->prepare($sql);
         $stmt->bindParam(':genre', $genre);
         $stmt->execute();
