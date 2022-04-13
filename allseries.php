@@ -59,7 +59,7 @@
             <section id="flex">
                 <?php foreach($serieIns->getSerie() as $serie){ ?>
                     <article>
-                        <a href="#" style="color: white;">
+                        <a href="afleveringen.php?serie=<?php echo $serie->SerieID ?>&seizoen=1" style="color: white;">
                             <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
                             <p><?php echo $serie->SerieTitel; ?></p>
                         </a>
@@ -110,7 +110,6 @@
         </article>
     </section>
 
-    <script src="js/slideshow.js"></script>
     <script src="https://kit.fontawesome.com/148dcfd780.js" crossorigin="anonymous"></script>
 </body>
 </html>
