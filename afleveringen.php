@@ -30,7 +30,9 @@ $aflevering = new SerieInfo();
         foreach ($aflevering->getSeasonOfSerie($_GET["serie"]) as $seizoen) {
             ?>
             
-            <a href="afleveringen.php?serie=<?php echo $_GET['serie'] ?>&seizoen=<?php echo $seizoen->Rang ?>">Seizoen: <?php echo $seizoen->Rang ?></a>
+            <a href="afleveringen.php?serie=<?php echo $_GET['serie'] ?>&seizoen=<?php echo $seizoen->Rang ?>">
+                Seizoen: <?php echo $seizoen->Rang ?>
+            </a>
             <?php
           }
         ?>
