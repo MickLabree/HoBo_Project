@@ -110,7 +110,6 @@
         </article>
     </section>
 
-    <script src="js/slideshow.js"></script>
     <script src="https://kit.fontawesome.com/148dcfd780.js" crossorigin="anonymous"></script>
 </body>
 </html>
