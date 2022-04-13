@@ -10,6 +10,13 @@ class SerieInfo extends DbConfig {
         return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
+    public function getSeries(){
+        $sql = "SELECT * FROM serie LIMIT 6";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_OBJ);
+    }
+
     public function getImageUrl($id){
         return substr("0000" . $id, -5) . ".jpg"; //000044
     }
