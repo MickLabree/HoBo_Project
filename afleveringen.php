@@ -38,7 +38,7 @@ $aflevering = new SerieInfo();
             <section id="flex">
                 <?php foreach ($aflevering->getAfleveringen($_GET["serie"], $_GET["seizoen"]) as $afleveringen){ ?>
                     <article>
-                        <a style="color: white;" href="#">
+                        <a style="color: white;" href="stream.php?serie=<?php echo $afleveringen->SerieID ?>&seizoen=1">
                             <img src="img/<?= $aflevering->getImageUrl($afleveringen->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
                             <p><?php echo $afleveringen->SerieTitel.":<br>"; echo $afleveringen->AflTitel;?></p>
                         </a>

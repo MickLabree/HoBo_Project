@@ -3,6 +3,7 @@ require_once "class/DbConfig.php";
 require_once "class/serieinfo.php";
 require_once 'class/Update.php';
 $serieIns = new SerieInfo();
+$aflevering = new SerieInfo();
 $update = new Update();
 // session_start();
 // if(!$_SESSION['ingelogd']){
@@ -35,31 +36,37 @@ $update = new Update();
         </nav>
     </header>
 
-    <iframe style="width: 100%; height: 90vh; margin-bottom: 10vh;" src="https://www.youtube.com/embed/Z1ZQMpp4BdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
+    <video style="width: 100%; height: 80vh;" controls>
+        <source src="img/Stranger.mp4">
+    </video>
+
     <section id="item-info">
+        <section id="fotos">
+            <section id="flex">
+                <?php foreach ($aflevering->getLigma($_GET["serie"]) as $afleveringen){ ?>
+                    <article>
+                            <img src="img/<?= $aflevering->getImageUrl($afleveringen->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
+                    </article>
+                <?php } ?>
+            </section>
+        </section>
+        
         <article>
-            <img src="img/00001.jpg" alt="" height="300">
-        </article>
-        <article>
-            <h1>Stranger Things</h1>
-            <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments,
+            <h1><?php echo $afleveringen->SerieTitel;?></h1>
+            <p>
+                When a young boy vanishes, a small town uncovers a mystery involving secret experiments,
                 terrifying supernatural forces, and one strange little girl.
             </p>
             <article style="display: flex; margin-top: 3vh;">
-                <article style="flex: 0.15;">
-                    <p>Country:</p>
-                    <p>Genre:</p>
-                    <p>Released:</p>
-                    <p>Production:</p>
-                    <p>Casts:</p>
+                <article style="flex: 0.5;">
+                    <p>Jaar:</p>
+                    <p>IMDBRating <i class='fas fa-star' style='color:gold;'></i>:</p>
+                    <p>Duur:</p>
                 </article>
                 <article style="flex: 1;">
-                    <p>United States of America</p>
-                    <p>Drama, Mystery, Sci-Fi & Fantasy</p>
-                    <p>2016-07-15</p>
-                    <p>21 Laps Entertainment</p>
-                    <p>Winona Ryder, David Harbour, Finn Wolfhard, <br>Millie Bobby Brown, Gaten Matarazzo</p>
+                <p><?php echo $afleveringen->Jaar;?></p>
+                <p><?php echo $afleveringen->IMDBRating;?></p>
+                <p><?php echo $afleveringen->Duur;?> min</p>
                 </article>
             </article>
         </article>
@@ -68,7 +75,7 @@ $update = new Update();
             <section id="flex">
                 <?php foreach($serieIns->getSeries() as $serie){ ?>
                     <article>
-                        <a href="#" style="color: white;">
+                        <a href="afleveringen.php?serie=<?php echo $serie->SerieID ?>&seizoen=1" style="color: white;">
                             <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="250px" alt="" onerror='this.src="img/no-image.png"'>
                             <p><?php echo $serie->SerieTitel; ?></p>
                         </a>

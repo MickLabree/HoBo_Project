@@ -17,6 +17,10 @@
     color: white;
 }
 
+#item-info h1{
+    text-transform: capitalize;
+}
+
 #flex{
 	display: flex;
 	flex-wrap: wrap;

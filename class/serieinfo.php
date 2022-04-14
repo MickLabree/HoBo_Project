@@ -56,6 +56,17 @@ class SerieInfo extends DbConfig {
         return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
+    public function getLigma($afleveringen){
+        $sql = "SELECT *, seizoen.Rang as sRang FROM seizoen
+                JOIN serie on serie.SerieID = seizoen.SerieID
+                JOIN aflevering on aflevering.SeizID = seizoen.SeizoenID
+                WHERE serie.SerieID = :serie LIMIT 1";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->bindParam(':serie', $afleveringen);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_OBJ);
+    }
+
 }
 
 
