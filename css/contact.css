@@ -105,6 +105,13 @@
 
 
  /* formulier */
+.opacitybox{
+  margin-top: 3vh;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
  .Placeholder {
   position: relative;
   overflow: hidden;
@@ -120,6 +127,7 @@
 }
 
 form {
+  width: 50vw;
   margin-top: 25px;
   transform: all 4s ease-in-out;
   color: #fff;
