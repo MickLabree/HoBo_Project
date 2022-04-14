@@ -73,7 +73,7 @@ $user = $update->getUpdate($_SESSION['email']);
                     <input type="submit" name="update" value="Update">
                 </article>
                 
-
+                
             </form>
         </section>
 
