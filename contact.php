@@ -51,6 +51,37 @@
             </form>
             </section>
         </section>
+
+            <!-- formulier -->
+    <section>
+        <article class="opacitybox">
+        <h1>Neem contact op</h1>
+        </article>
+        </section>
+        
+        <article class="Placeholder">
+        <form class="Form">
+          <div>
+           <label id="label-name" for="Name">Voor en achternaam</label>
+           <input type="text" name="Name" id="Name" placeholder="Voor en achternaam..." pattern="[A-Z]{1}[a-z]+" required>
+          </div>
+          <div>
+            <label id="label-email" for="E-mailadress">E-mail adress</label>
+            <input type="text" name="E-mailadress" id="E-mailadress" placeholder="Email..."  pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+           </div>
+          <div>
+            <label id="label-subject" for="Date">Onderwerp</label>
+            <input type="text" name="subject" id="subject" placeholder="Onderwerp..." required>
+           </div>
+          <div>
+            <label for="Time">Bericht</label>
+            <input type="text" name="message" id="message" placeholder="Bericht..." required>
+           </div>
+           <button type="reset" class="reset">Reset</button>
+           <button type="submit" class="submit">Versturen</button>
+        </form>
+        </article>
+
         
 
     <section id="item-overons">
