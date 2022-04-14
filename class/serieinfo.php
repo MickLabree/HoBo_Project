@@ -34,32 +34,26 @@ class SerieInfo extends DbConfig {
         return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
-    public function getInfo($klantNr){
-        $sql = "SELECT serie.SerieTitel, aflevering.AflTitel, stream.d_eind FROM serie 
-        JOIN seizoen ON serie.SerieID = seizoen.serieID 
-        JOIN aflevering ON seizoen.SeizoenID = aflevering.SeizID 
-        JOIN stream ON aflevering.AfleveringID = stream.AflID 
-        JOIN klant ON klant.KlantNR = stream.KlantID 
-        WHERE klant.KlantNr = :klantNr ORDER BY stream.d_eind DESC LIMIT 10;";
+    public function getSeasonOfSerie($id){
+        $sql = "SELECT * FROM seizoen
+                JOIN serie on serie.SerieID = seizoen.SerieID
+                WHERE seizoen.SerieID = :serie";
         $stmt = $this->connect()->prepare($sql);
-        $stmt->bindParam(':klantNr', $klantNr);
+        $stmt->bindParam(':serie', $id);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
-
-
-    public function favorite($data){
-        try{
-            $sql = "INSERT INTO klant (favorite) VALUES (:favorite)";
-            $stmt = $this->connect()->prepare($sql);
-            $stmt->bindParam(":favorite", $data['favorite']);
-            if(!$stmt->execute()){
-                throw new Exception("Account kon niet aangemaakt worden");
-            }
-        }catch(Exception $e){
-            echo $e->getMessage();
-        }
+    public function getAfleveringen($afleveringen, $seizoen){
+        $sql = "SELECT *, seizoen.Rang as sRang FROM seizoen
+                JOIN serie on serie.SerieID = seizoen.SerieID
+                JOIN aflevering on aflevering.SeizID = seizoen.SeizoenID
+                WHERE serie.SerieID = :serie AND seizoen.Rang = :seizoen";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->bindParam(':serie', $afleveringen);
+        $stmt->bindParam(':seizoen', $seizoen);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
 }
