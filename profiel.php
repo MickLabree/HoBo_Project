@@ -77,6 +77,48 @@ $user = $update->getUpdate($_SESSION['email']);
             </form>
         </section>
 
+
+              <!-- Footer -->
+
+      <section id="footer">
+        <article class="footer-links">
+            <h1>About us</h1>
+        <p>
+            HoBo is free tv shows streaming website with zero ads, it allows you watch tv shows online,
+             watch tv shows online free in high quality for free. You can also download full tv shows and watch it later if you want.
+        </p>
+        <div class="item-icons">
+            <a href="#" class="fab fa-facebook" style="color: #4267B2;"></a>
+            <a href="#" class="fab fa-instagram" style="color: #517fa4;"></a>
+            <a href="#" class="fab fa-twitter" style="color: #1DA1F2;"></a>
+        </div>
+        </article>
+
+        <article class="footer-center">
+            <h1>Links</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="allseries.php">Movies/Series</a></li>
+                    <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+                <ul>
+                <li><a href="home.php">Home</a></li>
+                    <li><a href="allseries.php">Movies/Series</a></li>
+                    <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+                    <ul>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="allseries.php">Movies/Series</a></li>
+                    <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </nav>
+        </article>
+    </section>
+
     <script src="https://kit.fontawesome.com/148dcfd780.js" crossorigin="anonymous"></script>
 </body>
 </html>

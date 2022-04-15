@@ -26,7 +26,7 @@ $update = new Update();
         <nav>
             <ul>
                 <li><a href="zoeken.php"><i class="fas fa-search"></i></a></li>
-                <li><a href="home.php" class="active">Home</a></li>
+                <li><a href="home.php">Home</a></li>
                 <li><a href="allseries.php">Movies/Series</a></li>
                 <li><img style="margin: 0;" src="img/logo.png" height="60" alt="Logo"></li>
                 <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
@@ -51,12 +51,8 @@ $update = new Update();
             </section>
         </section>
         
-        <article>
+        <article style="flex: 1.5;">
             <h1><?php echo $afleveringen->SerieTitel;?></h1>
-            <p>
-                When a young boy vanishes, a small town uncovers a mystery involving secret experiments,
-                terrifying supernatural forces, and one strange little girl.
-            </p>
             <article style="display: flex; margin-top: 3vh;">
                 <article style="flex: 0.5;">
                     <p>Jaar:</p>
@@ -70,7 +66,7 @@ $update = new Update();
                 </article>
             </article>
         </article>
-        <section id="fotos">
+        <section id="fotos" style="flex: 1.5;">
             <h3>You May Also Like </h3>
             <section id="flex">
                 <?php foreach($serieIns->getSeries() as $serie){ ?>
@@ -109,22 +105,22 @@ $update = new Update();
             <h1>Links</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="allseries.php">Movies/Series</a></li>
+                    <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Contact</a></li>
+                <li><a href="home.php">Home</a></li>
+                    <li><a href="allseries.php">Movies/Series</a></li>
+                    <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
                     <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="allseries.php">Movies/Series</a></li>
+                    <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
             </nav>
         </article>
