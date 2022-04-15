@@ -41,7 +41,7 @@ if(!$_SESSION['ingelogd']){
         <div class="slideshow-container">
 
                 <div class="mySlides fade">
-            <div class="slide-image1"></div>
+                <div class="slide-image1"></div>
           <!-- <img class="slideshow-img" src="img/strangerthings.png" style="width:100%"> -->
             <div class="text">
                 <h1>Stranger Things</h1>
