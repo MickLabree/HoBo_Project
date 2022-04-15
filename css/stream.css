@@ -13,8 +13,12 @@
 
 #item-info{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     color: white;
+}
+
+#item-info h1{
+    text-transform: capitalize;
 }
 
 #flex{

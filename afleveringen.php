@@ -38,7 +38,7 @@ $aflevering = new SerieInfo();
             <section id="flex">
                 <?php foreach ($aflevering->getAfleveringen($_GET["serie"], $_GET["seizoen"]) as $afleveringen){ ?>
                     <article>
-                        <a style="color: white;" href="#">
+                        <a style="color: white;" href="stream.php?serie=<?php echo $afleveringen->SerieID ?>&seizoen=1">
                             <img src="img/<?= $aflevering->getImageUrl($afleveringen->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
                             <p><?php echo $afleveringen->SerieTitel.":<br>"; echo $afleveringen->AflTitel;?></p>
                         </a>
@@ -84,22 +84,22 @@ $aflevering = new SerieInfo();
             <h1>Links</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="allseries.php">Movies/Series</a></li>
+                    <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Contact</a></li>
+                <li><a href="home.php">Home</a></li>
+                    <li><a href="allseries.php">Movies/Series</a></li>
+                    <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
                     <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="allseries.php">Movies/Series</a></li>
+                    <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
             </nav>
         </article>

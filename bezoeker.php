@@ -165,22 +165,22 @@ $update = new Update();
             <h1>Links</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="allseries.php">Movies/Series</a></li>
+                    <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Contact</a></li>
+                <li><a href="home.php">Home</a></li>
+                    <li><a href="allseries.php">Movies/Series</a></li>
+                    <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
                     <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="allseries.php">Movies/Series</a></li>
+                    <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
             </nav>
         </article>

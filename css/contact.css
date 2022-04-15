@@ -103,6 +103,111 @@
   text-align: center;
 }
 
+
+ /* formulier */
+.opacitybox{
+  margin-top: 3vh;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+ .Placeholder {
+  position: relative;
+  overflow: hidden;
+}
+
+.Placeholder form {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 22px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+form {
+  width: 50vw;
+  margin-top: 25px;
+  transform: all 4s ease-in-out;
+  color: #fff;
+  text-align: center;
+}
+
+input {
+  height: 35px;
+}
+
+form .submit {
+  background: #41811f;
+  border-color: transparent;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+form .reset {
+  background: #41811f;
+  border-color: transparent;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+#Name {
+  width: 100%;
+  background: transparent;
+  border: 3px solid #41811f;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+#E-mailadress {
+  width: 100%;
+  background: transparent;
+  border: 3px solid #41811f;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+#subject {
+  width: 100%;
+  background: transparent;
+  border: 3px solid #41811f;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+#message {
+  width: 100%;
+  height: 200px;
+  background: transparent;
+  border: 3px solid #41811f;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+
 /* Over ons */
 
 #item-overons{

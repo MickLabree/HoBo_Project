@@ -20,22 +20,22 @@
 .slide-image1{
   width: 100%;
   height: 90vh;
-  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/spiderman.jpg) ;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/strangerthings.png);
 }
 .slide-image2{
   width: 100%;
   height: 90vh;
-  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/strangerthings.png) ;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(https://images2.alphacoders.com/100/thumb-1920-1000886.jpg);
 }
 .slide-image3{
   width: 100%;
   height: 90vh;
-  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/thecrown.jpg) ;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/thecrown.jpg);
 }
 .slide-image4{
   width: 100%;
   height: 90vh;
-  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/marcos-mexico.jpg) ;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/marcos-mexico.jpg);
 }
 
 

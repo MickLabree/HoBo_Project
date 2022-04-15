@@ -39,30 +39,31 @@ if(!$_SESSION['ingelogd']){
             <!-- Slideshow -->
         
         <div class="slideshow-container">
-        
-        <div class="mySlides fade">
+
+                <div class="mySlides fade">
             <div class="slide-image1"></div>
-            <!-- <img class="slideshow-img" src="img/spiderman.jpg" style="width:100%"> -->
-            <div class="text">
-                <h1>Spider-Man No Way Home</h1>
-                <p>
-                    With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer 
-                    able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help 
-                    from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.
-                </p>
-                <a href="#" class="slideshow-button">Add to list <i class="fas fa-heart"></i></a>
-                <a href="#" class="slideshow-button">Watch now</a>
-            </div>
-        </div>
-    
-        <div class="mySlides fade">
-            <div class="slide-image2"></div>
           <!-- <img class="slideshow-img" src="img/strangerthings.png" style="width:100%"> -->
             <div class="text">
                 <h1>Stranger Things</h1>
                 <p>
                     In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search 
                     for answers, the children unravel a series of extraordinary mysteries.
+                </p>
+                <a href="#" class="slideshow-button">Add to list <i class="fas fa-heart"></i></a>
+                <a href="#" class="slideshow-button">Watch now</a>
+            </div>
+        </div>
+
+    
+        <div class="mySlides fade">
+            <div class="slide-image2"></div>
+          <!-- <img class="slideshow-img" src="img/strangerthings.png" style="width:100%"> -->
+            <div class="text">
+                <h1>The Umbrella Academy</h1>
+                <p>
+                On one day in 1989, 43 infants are inexplicably born to random, unconnected women who showed no signs of pregnancy the day before. 
+                Seven are adopted by billionaire industrialist Sir Reginald Hargreeves, who creates the Umbrella Academy and prepares his "children" 
+                to save the world.
                 </p>
                 <a href="#" class="slideshow-button">Add to list <i class="fas fa-heart"></i></a>
                 <a href="#" class="slideshow-button">Watch now</a>
@@ -162,22 +163,22 @@ if(!$_SESSION['ingelogd']){
             <h1>Links</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="allseries.php">Movies/Series</a></li>
+                    <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Contact</a></li>
+                <li><a href="home.php">Home</a></li>
+                    <li><a href="allseries.php">Movies/Series</a></li>
+                    <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
                     <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="allseries.php">Movies/Series</a></li>
+                    <li><a href="profiel.php" style="margin-right: 20px;">Profile</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
             </nav>
         </article>
