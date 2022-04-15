@@ -55,11 +55,13 @@ $update = new Update();
             <h1><?php echo $afleveringen->SerieTitel;?></h1>
             <article style="display: flex; margin-top: 3vh;">
                 <article style="flex: 0.5;">
+                    <p>Seizoen:</p>
                     <p>Jaar:</p>
                     <p>IMDBRating <i class='fas fa-star' style='color:gold;'></i>:</p>
                     <p>Duur:</p>
                 </article>
                 <article style="flex: 1;">
+                <p><?php echo $afleveringen->Rang;?></p>
                 <p><?php echo $afleveringen->Jaar;?></p>
                 <p><?php echo $afleveringen->IMDBRating;?></p>
                 <p><?php echo $afleveringen->Duur;?> min</p>
