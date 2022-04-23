@@ -131,15 +131,19 @@ $update = new Update();
 
         <!-- Alle series -->
         <section id="fotos">
-            <h3>All Series - </h3>
-            <section id="flex">
-                <?php foreach($serieIns->getSerie() as $serie){ ?>
-                    <article>
-                            <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
-                            <p style="color: white;"><?php echo $serie->SerieTitel; ?></p>
-                    </article>
-                <?php } ?>
-            </section>
+            <h1>Recommended</h1>
+        <section id="flex"><?php foreach($serieIns->getSerie() as $serie){ ?>
+        <article  style="color: white;">
+        <div class="container">
+        <img class="serieimg" src="./img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
+        <div class="overlay">
+            <div class="serieinfo"><?php  echo' Titel: '. $serie->SerieTitel;?></div>
+        </div>
+        </div>
+            <p><?php  echo' Titel: '. $serie->SerieTitel.'<br> Rating: <i class="fas fa-star" style="color:gold;"></i> ';  echo $serie->IMDBRating; ?></p>
+        </article>
+            <?php } ?>
+        </section>
         </section>
 
 
