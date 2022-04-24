@@ -122,6 +122,79 @@
 }
 
 
+  /* Zoeken */
+    /* Zoeken */
+
+    .test{
+      display: flex;
+      /* flex-direction: column; */
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #search-box{
+      width: 20.833333333333332vw;
+      height: 20vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* background-color: black; */
+    }
+    
+    #search-box h1{
+      color: white;
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 2vh;
+    }
+    
+    .item-search-box {
+      /* border: 2px solid white; */
+      background: #1c1e31;
+      height: 70px;
+      border-radius: 50px;
+      padding: 10px;
+    }
+    
+    .search-btn {
+      color: white;
+      float: right;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #161620;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 250ms;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      font-size: 25px;
+    }
+    
+    #fa-search {
+      background: black;
+      font-size: 24px;
+    }
+    
+    .search-input {
+      border: none;
+      background: none;
+      outline: none;
+      float: left;
+      padding: 0;
+      color: white;
+      font-size: 20px;
+      transition: 250ms;
+      line-height: 50px;
+      width: 250px;
+    }
+
+
+
+
     /* Series */
 
 #flex{
