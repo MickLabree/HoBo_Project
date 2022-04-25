@@ -120,7 +120,12 @@ if(!$_SESSION['ingelogd']){
                 <?php foreach($serieIns->getSeriesByGenre($_SESSION['genre']) as $serie){ ?>
                     <article>
                         <a href="afleveringen.php?serie=<?php echo $serie->SerieID ?>&seizoen=1" style="color: white;">
-                            <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
+                            <div class="container">
+                                <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
+                            <div class="overlay">
+                                <div class="serieinfo"><?php  echo' Titel: '. $serie->SerieTitel;?></div>
+                            </div>
+                            </div>
                             <p><?php  echo' Titel: '. $serie->SerieTitel.'<br> Rating: <i class="fas fa-star" style="color:gold;"></i> ';  echo $serie->IMDBRating; ?>/5</p>
                         </a>
                     </article>
@@ -134,7 +139,12 @@ if(!$_SESSION['ingelogd']){
                 <?php foreach($serieIns->getSerie() as $serie){ ?>
                     <article>
                         <a href="afleveringen.php?serie=<?php echo $serie->SerieID ?>&seizoen=1" style="color: white;">
+                        <div class="container">
                             <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
+                            <div class="overlay">
+                                <div class="serieinfo"><?php  echo' Titel: '. $serie->SerieTitel;?></div>
+                            </div>
+                            </div>
                             <p><?php  echo' Titel: '. $serie->SerieTitel.'<br> Rating: <i class="fas fa-star" style="color:gold;"></i> ';  echo $serie->IMDBRating; ?>/5</p>
                         </a>
                     </article>

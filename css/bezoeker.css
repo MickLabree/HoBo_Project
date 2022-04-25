@@ -199,6 +199,7 @@
 #flex{
   display: flex; 
   overflow: scroll;
+  /* height: 400px; */
 }
 
 #flex::-webkit-scrollbar{
@@ -212,7 +213,7 @@
   height: 300px;
 }
 
-#fotos h3{
+#fotos h1{
   color: white;
   text-align: center;
 }

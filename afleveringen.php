@@ -2,6 +2,9 @@
 require_once "class/serieinfo.php";
 // require_once "class/User.php";
 session_start();
+if(!$_SESSION['ingelogd']){
+    header("Location: bezoeker.php");
+}
 $aflevering = new SerieInfo();
 
 ?>
