@@ -233,7 +233,7 @@
   width: 100%;
   opacity: 0;
   user-select: none;
-  transition: 250ms ease;
+  transition: 250ms all;
   background-color: #000000e7;
 }
 
