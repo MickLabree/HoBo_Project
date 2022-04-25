@@ -20,22 +20,22 @@
 .slide-image1{
   width: 100%;
   height: 90vh;
-  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/spiderman.jpg) ;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/strangerthings.png);
 }
 .slide-image2{
   width: 100%;
   height: 90vh;
-  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/strangerthings.png) ;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(https://images2.alphacoders.com/100/thumb-1920-1000886.jpg);
 }
 .slide-image3{
   width: 100%;
   height: 90vh;
-  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/thecrown.jpg) ;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/thecrown.jpg);
 }
 .slide-image4{
   width: 100%;
   height: 90vh;
-  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/marcos-mexico.jpg) ;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.55) 100%, rgba(0,212,255,0) 100%, rgba(0,0,0,0.5665616588432247) 100%), url(../img/marcos-mexico.jpg);
 }
 
 
@@ -123,74 +123,73 @@
 
 
   /* Zoeken */
-    /* Zoeken */
 
-    .test{
-      display: flex;
-      /* flex-direction: column; */
-      justify-content: center;
-      align-items: center;
-    }
-    
-    #search-box{
-      width: 20.833333333333332vw;
-      height: 20vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      /* background-color: black; */
-    }
-    
-    #search-box h1{
-      color: white;
-      font-size: 30px;
-      font-weight: 500;
-      margin-bottom: 2vh;
-    }
-    
-    .item-search-box {
-      /* border: 2px solid white; */
-      background: #1c1e31;
-      height: 70px;
-      border-radius: 50px;
-      padding: 10px;
-    }
-    
-    .search-btn {
-      color: white;
-      float: right;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background: #161620;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: 250ms;
-      outline: none;
-      border: none;
-      cursor: pointer;
-      font-size: 25px;
-    }
-    
-    #fa-search {
-      background: black;
-      font-size: 24px;
-    }
-    
-    .search-input {
-      border: none;
-      background: none;
-      outline: none;
-      float: left;
-      padding: 0;
-      color: white;
-      font-size: 20px;
-      transition: 250ms;
-      line-height: 50px;
-      width: 250px;
-    }
+.test{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+#search-box{
+  width: 20.833333333333332vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+}
+
+#search-box h1{
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 2vh;
+}
+
+.item-search-box {
+  /* border: 2px solid white; */
+  background: #1c1e31;
+  height: 70px;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.search-btn {
+  color: white;
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #161620;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 250ms;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+#fa-search {
+  background: black;
+  font-size: 24px;
+}
+
+.search-input {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 20px;
+  transition: 250ms;
+  line-height: 50px;
+  width: 250px;
+}
 
 
 
@@ -232,6 +231,7 @@
   height: 100%;
   width: 100%;
   opacity: 0;
+  user-select: none;
   transition: 250ms ease;
   background-color: #000000e7;
 }

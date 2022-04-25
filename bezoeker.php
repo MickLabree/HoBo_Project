@@ -43,11 +43,10 @@ $update = new Update();
             <div class="slide-image1"></div>
             <!-- <img class="slideshow-img" src="img/spiderman.jpg" style="width:100%"> -->
             <div class="text">
-                <h1>Spider-Man No Way Home</h1>
+                <h1>Stranger Things</h1>
                 <p>
-                    With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer 
-                    able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help 
-                    from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.
+                    In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search 
+                    for answers, the children unravel a series of extraordinary mysteries.
                 </p>
                 <a href="login.php" class="slideshow-button">Sing in <i class="fa fa-sign-in" aria-hidden="true"></i></a>
             </div>
@@ -57,10 +56,11 @@ $update = new Update();
             <div class="slide-image2"></div>
           <!-- <img class="slideshow-img" src="img/strangerthings.png" style="width:100%"> -->
             <div class="text">
-                <h1>Stranger Things</h1>
+                <h1>The Umbrella Academy</h1>
                 <p>
-                    In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search 
-                    for answers, the children unravel a series of extraordinary mysteries.
+                    On one day in 1989, 43 infants are inexplicably born to random, unconnected women who showed no signs of pregnancy the day before. 
+                    Seven are adopted by billionaire industrialist Sir Reginald Hargreeves, who creates the Umbrella Academy and prepares his "children" 
+                    to save the world.
                 </p>
                 <a href="login.php" class="slideshow-button">Sing in <i class="fa fa-sign-in" aria-hidden="true"></i></a>
             </div>
