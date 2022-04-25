@@ -140,14 +140,8 @@ $update = new Update();
             <section id="flex">
                 <?php foreach($serieIns->getSerie() as $serie){ ?>
                     <article style="color: white;">
-                        <div class="container">
                             <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
-                            <div class="overlay">
-                            <div class="serieinfo"><?php  echo' Titel: '. $serie->SerieTitel;?></div>
-                        </div>
-                        </div>
                             <p><?php  echo' Titel: '. $serie->SerieTitel.'<br> Rating: <i class="fas fa-star" style="color:gold;"></i> ';  echo $serie->IMDBRating; ?>/5</p>
-                        
                     </article>
                 <?php } ?>
             </section>
@@ -163,7 +157,7 @@ $update = new Update();
             <h1>About us</h1>
         <p>
             HoBo is free tv shows streaming website with zero ads, it allows you watch tv shows online,
-             watch tv shows online free in high quality for free. You can also download full tv shows and watch it later if you want.
+            watch tv shows online free in high quality for free. You can also download full tv shows and watch it later if you want.
         </p>
         <div class="item-icons">
             <a href="#" class="fab fa-facebook" style="color: #4267B2;"></a>

@@ -252,3 +252,43 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* test */
+
+
+
+
+.container .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  height: 300px;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+  background-color: #1c1e31;
+}
+
+.container .tooltiptext p{
+  font-size: 15px;
+}
+
+.container:hover .tooltiptext {
+  visibility: visible;
+}

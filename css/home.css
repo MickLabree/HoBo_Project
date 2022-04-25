@@ -159,18 +159,17 @@
   height: 100%;
   width: 100%;
   opacity: 0;
-  user-select: none;
-  transition: 250ms all;
+  transition: 500ms all;
   background-color: #000000e7;
 }
 
 .container:hover .overlay {
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .serieinfo {
   color: white;
-  font-size: 20px;
+  font-size: 60px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -178,4 +177,9 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.fa-play-circle{
+    color :#79c142;
+
 }

@@ -123,7 +123,7 @@ if(!$_SESSION['ingelogd']){
                             <div class="container">
                                 <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
                             <div class="overlay">
-                                <div class="serieinfo"><?php  echo' Titel: '. $serie->SerieTitel;?></div>
+                                <i class="far fa-play-circle serieinfo"></i>
                             </div>
                             </div>
                             <p><?php  echo' Titel: '. $serie->SerieTitel.'<br> Rating: <i class="fas fa-star" style="color:gold;"></i> ';  echo $serie->IMDBRating; ?>/5</p>
@@ -142,7 +142,7 @@ if(!$_SESSION['ingelogd']){
                         <div class="container">
                             <img src="img/<?= $serieIns->getImageUrl($serie->SerieID); ?>" height="300px" width="200px" alt="" onerror='this.src="img/no-image.png"'>
                             <div class="overlay">
-                                <div class="serieinfo"><?php  echo' Titel: '. $serie->SerieTitel;?></div>
+                                <i class="far fa-play-circle serieinfo"></i>
                             </div>
                             </div>
                             <p><?php  echo' Titel: '. $serie->SerieTitel.'<br> Rating: <i class="fas fa-star" style="color:gold;"></i> ';  echo $serie->IMDBRating; ?>/5</p>
