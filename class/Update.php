@@ -15,7 +15,6 @@ class Update extends DbConfig{
             $stmt->bindParam(":Achternaam", $data['Achternaam']);
             $stmt->bindParam(":Email", $data['Email']);
             $stmt->bindParam(":password", $encryptedPassword);
-            session_start();
             $_SESSION['genre'] = $data['option'];
             if(!$stmt->execute()){
                 throw new Exception("Gegevens niet veranderd");
