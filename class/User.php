@@ -61,18 +61,19 @@ class User extends DbConfig{
     }
 
     
-public function check_user_exists($Email){
-    try{
-        $stmt = "SELECT Email FROM klant WHERE Email=:Email";
-        $stmt = $this->connect()->prepare($Email);
-        $stmt->bindParam(":Email", $Email);
-        return $stmt->fetch(PDO::FETCH_OBJ);
-    }catch(PDOExeception $e)
-    {
-        echo $e->getMessage();
+    public function check_user_exists($Email){
+        try{
+            $sql = "SELECT Email FROM klant WHERE Email=:Email";
+            $stmt = $this->connect()->prepare($sql);
+            $stmt->bindParam(":Email", $Email);
+            $stmt->execute();
+            return $stmt->fetch(PDO::FETCH_OBJ);
+        }catch(Exception $e)
+        {
+            echo $e->getMessage();
+        }
     }
-}
-
+    
 }
 
 
